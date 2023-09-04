@@ -24,6 +24,13 @@ function generateboxes(domElement, limit) {
         cellElement.append(i + 1)
         domElement.append(cellElement)
 
+        // aggiungere addEventListner quando clicco e far colorare la casella di azzurro
+        cellElement.addEventListener('click', function () {
+            this.classList.toggle('bg-green')
+            console.log(this.classList);
+
+        })
+
     }
 }
 
